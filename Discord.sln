@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FiascoBot", "FiascoBot\FiascoBot.fsproj", "{1AD6DB14-D715-47FF-9813-823A7B02AF23}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FiascoTest", "FiascoTest\FiascoTest.fsproj", "{5EEF4E7E-9266-43A2-B909-65474836E36F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{1AD6DB14-D715-47FF-9813-823A7B02AF23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AD6DB14-D715-47FF-9813-823A7B02AF23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AD6DB14-D715-47FF-9813-823A7B02AF23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EEF4E7E-9266-43A2-B909-65474836E36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EEF4E7E-9266-43A2-B909-65474836E36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EEF4E7E-9266-43A2-B909-65474836E36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EEF4E7E-9266-43A2-B909-65474836E36F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
