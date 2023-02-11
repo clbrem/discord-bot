@@ -32,5 +32,19 @@ type Scenario =
         
 type State = {
     players: Map<string, Player * DicePool>
+    dice: DicePool
     scenario: Set<Scenario>
 }
+
+module State =
+    let addPlayer player state : State =
+        { state with
+           players = state.players |> Map.add player.discriminator (player, DicePool.empty) 
+        }
+    let dropPlayer player state : State =
+        { state with
+           players = state.players |> Map.remove player.discriminator  
+        }
+    
+    
+        
