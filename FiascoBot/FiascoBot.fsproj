@@ -10,6 +10,7 @@
         <Compile Include="Dice.fs" />
         <Compile Include="State.fs" />
         <Compile Include="Commands.fs" />
+        <Compile Include="Reader.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
@@ -17,8 +18,13 @@
       <PackageReference Include="DSharpPlus" Version="4.3.0" />
       <PackageReference Include="DSharpPlus.CommandsNext" Version="4.3.0" />
       <PackageReference Include="DSharpPlus.SlashCommands" Version="4.3.0" />
+      <PackageReference Include="Markdig" Version="0.31.0" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
       <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="7.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Modules\Sample.md" />
     </ItemGroup>
 
 </Project>

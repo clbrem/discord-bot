@@ -10,7 +10,11 @@
     <ItemGroup>
         <Compile Include="MyAssert.fs" />
         <Compile Include="Tests.fs" />
+        <Compile Include="MarkdownParserTest.fs" />
         <Compile Include="Program.fs" />
+        <Content Include="Modules\*.md">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>

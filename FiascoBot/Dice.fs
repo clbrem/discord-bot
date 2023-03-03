@@ -1,6 +1,7 @@
 namespace FiascoBot
 open System
 open System.Text.RegularExpressions
+
 type DiceColor =
     | White
     | Black
@@ -59,3 +60,10 @@ module Dice =
   let rollMany (random: Random)  =
       roll random
       |> List.map
+  
+  let rolled (dice: Dice) =
+      dice.rolled
+  let sides (dice:Dice) =
+      dice.sides
+  let color (dice: Dice) =
+      dice.color
