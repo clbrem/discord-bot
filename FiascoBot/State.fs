@@ -12,28 +12,29 @@ module DicePool =
     let remove a : DicePool -> DicePool = Set.remove a
     let empty: DicePool = Set.empty
     
-type Detail = {
+type Detail<'T> = {
     key: int
     description: string
-    detail: Detail option
+    detail: 'T
 }
+type Detail = Detail<unit>
 
-type Relationship = {
+type Relationship<'T> = {
     key: int
     description: string
-    detail: Detail option
+    detail: 'T
     players: Set<Player> 
 }
-type Scenario =
-    | Relationship of Relationship
-    | Need of Detail
-    | Location of Detail
-    | Object of Detail
+type Scenario<'T> =
+    | Relationship of Relationship<'T>
+    | Need of Detail<'T>
+    | Location of Detail<'T>
+    | Object of Detail<'T>
         
 type State = {
     players: Map<string, Player * DicePool>
     dice: DicePool
-    scenario: Set<Scenario>
+    scenario: Set<Scenario<Detail option>>
 }
 
 module State =

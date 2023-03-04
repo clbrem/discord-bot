@@ -25,6 +25,18 @@ module Reader =
             p.Inline.FirstChild.ToString() |> Some             
         | _ -> None
     
+    let (|Detail|_|) : Pattern<Detail*Block list> =
+        function
+        | Item (item, Text description :: rest) ->
+            ({
+                key= item
+                description = description
+                detail = ()
+            }, rest )|> Some
+        | _ -> None
+    
+    
+        
     
     
     

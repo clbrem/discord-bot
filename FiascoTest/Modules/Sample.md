@@ -1,7 +1,44 @@
-﻿
-## A Thing
-# Sample
-   1) Another Thing
-      1) Hi 
-      2) There
-      3) Bye
+﻿Fiasco Playset
+## Locations...
+1) First
+   1) one 
+   2) two
+   3) three
+   4) four
+   5) five
+   6) six
+2) Second
+   1) one
+   2) two
+   3) three
+   4) four
+   5) five
+   6) six  
+3) Third
+   1) one
+   2) two
+   3) three
+   4) four
+   5) five
+   6) six
+4) Fourth
+   1) one
+   2) two
+   3) three
+   4) four
+   5) five
+   6) six
+5) Fifth
+   1) one
+   2) two
+   3) three
+   4) four
+   5) five
+   6) six
+6) Sixth
+   1) one
+   2) two
+   3) three
+   4) four
+   5) five
+   6) six

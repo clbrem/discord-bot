@@ -12,13 +12,13 @@ open Reader
 module MarkdownTest =
     let file = File.ReadAllText "./Modules/Sample.md"
     [<Fact>]
-    let ``Can Read Markdown File``() =
+    let ``Can Read Markdown File``() =                
         let rec loop =
             function
-            | Header "Sample"
+            | Header category
                :: Ordered (
                    Item ( _,
-                       Text "Another Thing"
+                       Text title
                        :: Ordered(
                            Item(i, Text x:: _ ) :: _ 
                            ) :: _
